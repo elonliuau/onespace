@@ -45,7 +45,12 @@
     imgEl.setAttribute('src', `${scene.background}`);
   }
 
-  changeBackground(hardCodedScene1);
+  function renderScene(scene) {
+    changeBackground(scene);
+    scene.objects.forEach(renderObject);
+  }
+
+  renderScene(hardCodedScene1);
 
 </script>
 
