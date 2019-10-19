@@ -1,15 +1,14 @@
 <!-- include A-Frame obviously -->
 <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
 
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
 <body style='margin : 0px; overflow: hidden;'>
 
-<a-scene>
+<a-scene embedded arjs='sourceType: webcam'>
 
   <a-assets>
-    <img id="sky" src="assets/48498480681_6c789a6c18_o.jpg">
   </a-assets>
-
-  <a-sky src="#sky"></a-sky>
 
 </a-scene>
 
