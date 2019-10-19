@@ -1,0 +1,52 @@
+<!-- include A-Frame obviously -->
+<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+
+<!--<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>-->
+
+<body style='margin : 0px; overflow: hidden;'>
+
+<a-scene>
+  <a-assets>
+    <img id="sky" src="">
+  </a-assets>
+
+  <a-sky src="#sky"></a-sky>
+
+  <a-text value="Xuuuuuuu" negate="false" scale="5 5 2" position="-2 2 -4"></a-text>
+
+</a-scene>
+
+<script>
+  const hardCodedScene1 = {
+    'objects': [
+      {
+        'location': { 'x': -2, 'y': 2, 'z': -4 },
+        'size': 1
+      }
+    ],
+    'background': 'assets/48498480681_6c789a6c18_o.jpg'
+  };
+
+  function renderObject(object) {
+    const sceneEl = document.querySelector('a-scene');
+
+    const entityEl = document.createElement('a-entity');
+    entityEl.setAttribute('geometry', {
+      primitive: 'sphere',
+      height: 1,
+      width: 1
+    });
+    entityEl.setAttribute('position', `${object.location.x} ${object.location.y} ${object.location.z}`);
+    sceneEl.appendChild(entityEl);
+  }
+
+  function changeBackground(scene) {
+    const imgEl = document.querySelector('img#sky');
+    imgEl.setAttribute('src', `${scene.background}`);
+  }
+
+  changeBackground(hardCodedScene1);
+
+</script>
+
+</body>
