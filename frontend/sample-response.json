@@ -1,21 +1,25 @@
 {
-  "id": 2,
+  "id": 4,
   "objects": [
     {
       "location": { "x": -2, "y": 2, "z": 4 },
-      "size": 1
+      "size": 1,
+      "color": "blue"
     },
     {
       "location": { "x": 4, "y": -2, "z": 4 },
-      "size": 2
+      "size": 2,
+      "color": "blue"
     },
     {
       "location": { "x": 6, "y": -4, "z": 3 },
-      "size": 2
+      "size": 2,
+      "color": "blue"
     },
     {
       "location": { "x": 3, "y": -2, "z": 10 },
-      "size": 2
+      "size": 2,
+      "color": "blue"
     }
   ],
   "background": "assets/48498480681_6c789a6c18_o.jpg"
