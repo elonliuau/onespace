@@ -7,8 +7,10 @@
     "start": "concurrently --names tsc,node 'ENVIRONMENT=local NODE_PATH=dist/ ./bin/www'"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "http": "^0.0.0"
+    "http": "^0.0.0",
+    "multer": "^1.4.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.1",
