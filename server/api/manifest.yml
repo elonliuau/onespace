@@ -1,0 +1,8 @@
+applications:
+  - name: onespace-api
+    memory: 128MB
+    instances: 1
+    buildpack: nodejs_buildpack
+    command: bin/run
+    env:
+      OPTIMIZE_MEMORY: true
