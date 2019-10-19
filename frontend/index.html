@@ -17,15 +17,6 @@
 </a-scene>
 
 <script>
-  const hardCodedScene1 = {
-    'objects': [
-      {
-        'location': { 'x': -2, 'y': 2, 'z': -4 },
-        'size': 1
-      }
-    ],
-    'background': 'assets/48498480681_6c789a6c18_o.jpg'
-  };
 
   function renderObject(object) {
     const sceneEl = document.querySelector('a-scene');
@@ -50,7 +41,11 @@
     scene.objects.forEach(renderObject);
   }
 
-  renderScene(hardCodedScene1);
+  fetch('sample-response.json').then(
+          response => response.json().then(
+                  scene => renderScene(scene)
+          )
+  );
 
 </script>
 
