@@ -21,4 +21,9 @@
 
 <script src="business-logic.js"></script>
 
+<script>
+  fetch('../spain-response.json').then(
+          response => response.json().then(newScene => renderScene(newScene)));
+</script>
+
 </body>

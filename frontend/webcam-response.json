@@ -1,0 +1,35 @@
+{
+  "id": 8,
+  "objects": [
+    {
+      "location": { "x": -46, "y": 10, "z": 24 },
+      "size": 1,
+      "color": "blue"
+    },
+    {
+      "location": { "x": -99, "y": 10, "z": 78 },
+      "size": 2,
+      "color": "red"
+    },
+    {
+      "location": { "x": 66, "y": 10, "z": -18 },
+      "size": 2,
+      "color": "black"
+    },
+    {
+      "location": { "x": 35, "y": 10, "z": 55 },
+      "size": 2,
+      "color": "white"
+    },
+    {
+      "location": { "x": 67, "y": 10, "z": 0 },
+      "size": 2,
+      "color": "purple"
+    },
+    {
+      "location": { "x": 45, "y": 10, "z": -6 },
+      "size": 2,
+      "color": "green"
+    }
+  ]
+}

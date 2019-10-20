@@ -14,22 +14,6 @@ function generateObjectEntity(object) {
     return entityEl;
 }
 
-function renderScene() {
-    const localStoredScene = localStorage.getItem('scene');
-
-    if (localStoredScene) {
-        const scene = JSON.parse(localStoredScene);
-
-        if ('background' in scene) {
-            const imgEl = document.querySelector('img#sky');
-            imgEl.setAttribute('src', `${scene.background}`);
-        }
-
-        const sceneEl = document.querySelector('a-scene');
-        scene.objects.forEach(object => sceneEl.appendChild(generateObjectEntity(object)));
-    }
-}
-
 function createInteractions() {
     AFRAME.registerComponent('cursor-listener', {
         init: function () {
@@ -40,7 +24,7 @@ function createInteractions() {
                 const dates = ["17/3/1958", "21/5/1965", "6/9/1978", "10/10/1999", "10/4/1998", "19/1/1960", "23/4/1961"];
                 var date = dates[Math.floor(Math.random()*dates.length)];
 
-                document.querySelector('a-camera a-text').setAttribute('value', `Owner: ${item}  \nLaunch date: ${date}`);
+                document.querySelector('a-camera a-text').setAttribute('value', `${item} \n${date}`);
             });
             this.el.addEventListener('mouseleave', function (evt) {
                 document.querySelector('a-camera a-text').setAttribute('value', '');
@@ -50,17 +34,47 @@ function createInteractions() {
 }
 
 createInteractions();
-renderScene();
 
-setInterval(function() {
-    fetch('sample-response.json').then(
-        response => response.json().then(newScene => {
-            const localStoredScene = localStorage.getItem('scene');
-            if (!localStoredScene || (localStoredScene && JSON.parse(localStoredScene).id != newScene.id)) {
-                localStorage.setItem('scene', JSON.stringify(newScene));
-                window.location.href = 'background' in newScene ? '../static.html' : '../webcam.html';
-            }
+function renderScene(scene) {
+    if (scene) {
+        if ('background' in scene) {
+            const imgEl = document.querySelector('img#sky');
+            imgEl.setAttribute('src', `${scene.background}`);
         }
-        )
-    )
-}, 10000);
+
+        const sceneEl = document.querySelector('a-scene');
+        scene.objects.forEach(object => sceneEl.appendChild(generateObjectEntity(object)));
+    }
+}
+
+
+
+// function renderScene() {
+//     const localStoredScene = localStorage.getItem('scene');
+//
+//     if (localStoredScene) {
+//         const scene = JSON.parse(localStoredScene);
+//
+//         if ('background' in scene) {
+//             const imgEl = document.querySelector('img#sky');
+//             imgEl.setAttribute('src', `${scene.background}`);
+//         }
+//
+//         const sceneEl = document.querySelector('a-scene');
+//         scene.objects.forEach(object => sceneEl.appendChild(generateObjectEntity(object)));
+//     }
+// }
+
+// renderScene();
+// setInterval(function() {
+//     fetch('webcam-response.json').then(
+//         response => response.json().then(newScene => {
+//             const localStoredScene = localStorage.getItem('scene');
+//             if (!localStoredScene || (localStoredScene && JSON.parse(localStoredScene).id != newScene.id)) {
+//                 localStorage.setItem('scene', JSON.stringify(newScene));
+//                 window.location.href = 'background' in newScene ? '../st1atic.html' : '../webcam.html';
+//             }
+//         }
+//         )
+//     )
+// }, 10000);

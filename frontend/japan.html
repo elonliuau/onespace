@@ -1,28 +1,28 @@
 <!-- include A-Frame obviously -->
 <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
 
-<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-
 <body style='margin : 0px; overflow: hidden;'>
 
-<a-scene embedded arjs='sourceType: webcam'>
+<a-scene>
 
   <a-assets>
+    <img id="sky" src="">
   </a-assets>
+
+  <a-sky src="#sky"></a-sky>
 
   <!-- Camera + Cursor -->
   <a-camera position="0 -0.5 0">
     <a-cursor scale="0.5 0.5" color="#fff"></a-cursor>
-    <a-text value="" scale="1 1 1" position="0 0 -2" color="yellow"></a-text>
+    <a-text value="" scale="2 2 1" position="0 0 -4" color="yellow"></a-text>
   </a-camera>
 
 </a-scene>
 
 <script src="business-logic.js"></script>
 
-
 <script>
-  fetch('../webcam-response.json').then(
+  fetch('../japan-response.json').then(
           response => response.json().then(newScene => renderScene(newScene)));
 </script>
 
