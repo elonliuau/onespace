@@ -4,9 +4,7 @@
     <list default="true" id="0f2f8aaf-2d04-4299-aae2-537b468040ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/business-logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/business-logic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sample-response-webcam.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sample-response-webcam.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sample-response.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sample-response.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

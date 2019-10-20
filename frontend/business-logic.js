@@ -9,6 +9,7 @@ function generateObjectEntity(object) {
         color: `${object.color}`
     });
     entityEl.setAttribute('position', `${object.location.x} ${object.location.y} ${object.location.z}`);
+    entityEl.setAttribute('cursor-listener', '');
 
     return entityEl;
 }
@@ -29,6 +30,17 @@ function renderScene() {
     }
 }
 
+function createInteractions() {
+    AFRAME.registerComponent('cursor-listener', {
+        init: function () {
+            this.el.addEventListener('mouseenter', function (evt) {
+                alert('I was clicked at: ', evt.detail.intersection.point);
+            });
+        }
+    });
+}
+
+createInteractions();
 renderScene();
 
 setInterval(function() {
