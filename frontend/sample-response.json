@@ -2,20 +2,34 @@
   "id": 2,
   "objects": [
     {
-      "location": { "x": -2, "y": 2, "z": 4 },
-      "size": 1
+      "location": { "x": -46, "y": 88, "z": 24 },
+      "size": 1,
+      "color": "blue"
     },
     {
-      "location": { "x": 4, "y": -2, "z": 4 },
-      "size": 2
+      "location": { "x": -99, "y": 74, "z": 78 },
+      "size": 2,
+      "color": "red"
     },
     {
-      "location": { "x": 6, "y": -4, "z": 3 },
-      "size": 2
+      "location": { "x": 66, "y": 90, "z": -18 },
+      "size": 2,
+      "color": "black"
     },
     {
-      "location": { "x": 3, "y": -2, "z": 10 },
-      "size": 2
+      "location": { "x": 35, "y": 76, "z": 55 },
+      "size": 2,
+      "color": "white"
+    },
+    {
+      "location": { "x": 67, "y": 70, "z": 0 },
+      "size": 2,
+      "color": "purple"
+    },
+    {
+      "location": { "x": 45, "y": 80, "z": -6 },
+      "size": 2,
+      "color": "green"
     }
   ],
   "background": "assets/48498480681_6c789a6c18_o.jpg"
