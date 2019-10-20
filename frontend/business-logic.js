@@ -5,6 +5,9 @@ function generateObjectEntity(object) {
         height: 1,
         width: 1
     });
+    entityEl.setAttribute('material', {
+        color: `${object.color}`
+    });
     entityEl.setAttribute('position', `${object.location.x} ${object.location.y} ${object.location.z}`);
 
     return entityEl;
