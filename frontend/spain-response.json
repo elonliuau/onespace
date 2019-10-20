@@ -1,5 +1,5 @@
 {
-  "id": 4,
+  "id": 6,
   "objects": [
     {
       "location": { "x": -46, "y": 88, "z": 24 },
@@ -32,5 +32,5 @@
       "color": "green"
     }
   ],
-  "background": "assets/48498480681_6c789a6c18_o.jpg"
+  "background": "assets/spain.jpg"
 }

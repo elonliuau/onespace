@@ -1,0 +1,51 @@
+{
+  "id": 9,
+  "objects": [
+    {
+      "location": { "x": 36, "y": 78, "z": 14 },
+      "size": 1,
+      "color": "blue"
+    },
+    {
+      "location": { "x": -89, "y": 74, "z": 68 },
+      "size": 2,
+      "color": "red"
+    },
+    {
+      "location": { "x": 46, "y": 90, "z": -8 },
+      "size": 2,
+      "color": "black"
+    },
+    {
+      "location": { "x": 25, "y": 80, "z": 45 },
+      "size": 2,
+      "color": "white"
+    },
+    {
+      "location": { "x": 57, "y": 90, "z": 10 },
+      "size": 2,
+      "color": "purple"
+    },
+    {
+      "location": { "x": 35, "y": 85, "z": -16 },
+      "size": 2,
+      "color": "green"
+    },
+    {
+      "location": { "x": -36, "y": 82, "z": 14 },
+      "size": 1,
+      "color": "blue"
+    },
+    {
+      "location": { "x": 78, "y": 79, "z": 4 },
+      "size": 1,
+      "color": "pink"
+    },
+    {
+      "location": { "x": -16, "y": 88, "z": 24 },
+      "size": 1,
+      "color": "yellow"
+    }
+  ],
+  "background": "assets/japan.jpg"
+}
